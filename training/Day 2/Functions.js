@@ -37,3 +37,20 @@ const person = {
   // Use of apply is : apply takes arguments not separatel as call but in form of an array
 
   console.log(person.fullName.apply(person1,['Guragon','Delhi']));
+
+ // Use of bind 
+  const person = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  
+  const member = {
+    firstName:"Hege",
+    lastName: "Nilsen",
+  }
+  
+  let fullName = person.fullName.bind(member);
+  
