@@ -66,4 +66,31 @@ const person = {
   const arr3=[1,2,3,...arr2]
   console.log(arr3)
 
+  // differnece between call, apply, bind
+
+  const name1={
+    firstname: "Sushma",
+    lastname: "Rani",
+    printfullname: function()
+    {
+      return this.firstname + " " + this.lastname
+    }
+
+  }
+
+  const name2={
+    firstname:"Veenu",
+    lastname:"Rani",
+
+  }
+  console.log(name1.printfullname.call(name1))
+  console.log(name1.printfullname.call(name2))
+
+  const first=name1.printfullname.bind(name1)
+  const second= name1.printfullname.bind(name2)
+  console.log(first,second)
+  console.log(first(),second())
+
+
+
   
