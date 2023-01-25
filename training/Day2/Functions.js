@@ -61,4 +61,9 @@ const person = {
   const [a,b,c,...rest]=arr2
   console.log(rest)
 
+  //spread 
+
+  const arr3=[1,2,3,...arr2]
+  console.log(arr3)
+
   

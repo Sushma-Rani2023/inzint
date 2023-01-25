@@ -10,6 +10,7 @@ get : function(){
 console.log(person.get())
 
 // new creates an object
+
 var car=new String
 car['brand']='BMW'
 console.log(car)
@@ -46,7 +47,7 @@ function Person(first, last, age, eyecolor) {
   const myMother = new Person("Sally", "Rally", 48, "green");
   console.log(myFather,myMother)
 
-  
+
 
 
 
