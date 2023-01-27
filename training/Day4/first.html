@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <h2>JavaScript addEventListener()</h2>
+<button id="myBtn">Try it</button>
+<br>
+<body>
+Name: <input type="text" name="First"  value="Sushma" onchange="myFunction(this.value)">
+Roll: <input type="text" value="sfffv ">
+</body>
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+    console.log('Done')
+;} ) 
+console.log('HIIIIIIIII')
+function myFunction(val) {
+  
+  console.log('Change is ',val);
+  console.log(document.getElementsByName("First"));
+}
+</script>  
+</html>
