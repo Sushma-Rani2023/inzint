@@ -10,10 +10,22 @@
 <button id="myBtn">Try it</button>
 <br>
 <body>
-Name: <input type="text" name="First"  value="Sushma" onchange="myFunction(this.value)">
+Name: <input type="text" name="susham"  value="Sushma" onchange="myFunction(this.value)">
 Roll: <input type="text" value="sfffv ">
 </body>
 <script>
+    let a= prompt('Enter the value ',4)
+    console.log(a);
+    let b=prompt('Enter the value for b')
+    for (let c=0;c<b;c++){
+        let s=''
+        for (let i=0;i<=c;i++)
+        {
+            s+='*'
+            
+        }
+        console.log(s)
+    };
 document.getElementById("myBtn").addEventListener("click", function() {
     console.log('Done')
 ;} ) 
